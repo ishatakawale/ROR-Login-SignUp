@@ -37,6 +37,7 @@ rails s
 ```
 7. Visit http://localhost:3000/ to see the magic of website! (By default Ruby on Rails work on the port number 3000 but you can change it if you want by typing ```bash rails s -p 10524```
 )
-#####Pro Tip
+
+##### Pro Tip
 You can use ngrok to host your project if you desire to demostrate, find out more here :
 http://ngrok.io/
