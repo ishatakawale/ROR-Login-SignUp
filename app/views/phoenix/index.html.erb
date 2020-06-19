@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Phoenix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/assets/scaffolds.scss">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+	<h1 style="color: white;position:absolute;right:39%;top: 10%">Welcome to Phoenix</h1>
+<button style="position:absolute;left:25%;top: 30%"type="button" class="btn btn-light btn-lg text-justify">学生</button>
+
+<button style="position:absolute;left:45%;top: 30%" type="button" class="btn btn-light btn-lg">企業</button>
+
+<button  style="position:absolute;left:65%;top: 30%" type="button" class="btn btn-light btn-lg">JOB</button>
+
+<button style="position:absolute;left:35%;top: 50%"type="button" class="btn btn-light btn-lg">担当者</button>
+<button style="position:absolute;left:55%;top: 50%" type="button" class="btn btn-light btn-lg">売り上げ</button>
+ <%= link_to 'Log Out', logout_path , class: "btn btn-primary btn-lg"%> <!--Button sends the command to appliation controller where user id is destroyed-->
+</body>
+</html>

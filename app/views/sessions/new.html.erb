@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/scaffolds.scss">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+  
+  <body>
+    <div class="container-fluid" style="position: absolute;left:35%;top: 10%"> 
+      <div class="row">
+        <div class="col-sm col-sm-offset-2 col-sm-offset-1">
+          <h1 style="color: white">Welcome to Phoenix Portal</h1>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <div class="card-pf bg-light" style="width: 400px;">
+                  <div class="card-body">
+                      <h4 class="card-title" style="text-align: center;font-weight: 200">Log In To Your Account</h4>
+                      <p id='alert' style="color: black"><%= alert %></p>
+                    
+                        <!--Ruby form to Authenticate User-->
+                          <%= form_tag sessions_path do |form| %>
+                          <div class='form-group'> 
+                            <%= text_field_tag :id ,"",placeholder: "Company ID",class:"form-control"%>
+                          </div>
+                          <div class='form-group'>
+                            <%= text_field_tag :name,"",placeholder: "Username", class:"form-control"%>
+                          </div>
+                          <div class='form-group'>  
+                            <%= password_field_tag :password ,"",placeholder: "Password", class:"form-control"%>  
+                          </div>
+                          <div class='actions'>  
+                            <%= submit_tag 'Login' ,class:"btn btn-primary btn-block btn-lg"%>
+                          </div>  
+                          <% end %>
+                        <!--This details of this form will be sent to sessions_controller to authenticate the user-->
+
+                      <p style="color: black">Need an account?<a href="/users/new">Sign up</a></p>
+                      <!--This button will take us to the sign up page-->
+                  </div>
+                </div>
+                      <footer>
+                      <a class="login-pf-page-footer-link" href="#" style="margin-right: 50px;color: white">Terms of Use</a>
+                      <a class="login-pf-page-footer-link" href="#" style="margin-right: 50px;color: white">Help</a>
+                      <a class="login-pf-page-footer-link" href="#" style="margin-right: 50px;color: white">Privacy Policy</a>
+                      </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
