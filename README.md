@@ -14,7 +14,6 @@ Rails which can be downloaded from: http://railsinstaller.org/en
 ```bash
  rails new phoenix -d mysql 
 ```
-The default location is C:\Sites\phoenix 
 
 2. Delete the contents of phoenix folder and replace them with all the downloaded folders.
 
@@ -35,9 +34,8 @@ rails db:migrate
 ```bash
 rails s 
 ```
-7. Visit http://localhost:3000/ to see the magic of website! (By default Ruby on Rails work on the port number 3000 but you can change it if you want by typing ```bash rails s -p 10524```
-)
+7. Visit http://localhost:3000/ to see the magic of website! (Ruby on Rails work on the port number 3000 by default) 
 
 ##### Pro Tip
-You can use ngrok to host your project if you desire to demostrate, find out more here :
+You can use ngrok to demonstrate your websites without deploying them, find out more here :
 http://ngrok.io/
